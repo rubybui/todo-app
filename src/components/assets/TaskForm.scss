@@ -1,0 +1,89 @@
+label {
+    display: flex;
+    font-size: 12px;
+    line-height: 1;
+    margin: 10px 0 4px;
+}
+
+input[type="date"],
+input[type="text"] {
+    display: flex;
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    padding: 0 10px;
+    transition: 0.3s ease;
+
+}
+
+textarea {
+    display: flex;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 10px;
+}
+
+select {
+    display: flex;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    height: 30.5px;
+    padding: 0 10px;
+    width: 100%;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-position-x: 100%;
+    background-position-y: 3px;
+    background-repeat: no-repeat;
+}
+
+.taskform {
+    font-family: Arial, sans-serif;
+    width: 95%;
+    margin: 0 auto;
+
+    &__control {
+        &--left {
+            width: 47%;
+            float: left;
+        }
+
+        &--right {
+            width: 47%;
+            float: right;
+        }
+    }
+
+    button {
+        font: inherit;
+        margin-top: 10px;
+        padding: 0.5rem 1rem;
+        background-color: #45ba62;
+        cursor: pointer;
+        font-size: 1rem;
+        border-radius: 2px;
+        width: 100%;
+        color: white;
+        border: none;
+    }
+}
+
+::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    background-image: url("../../store/asset/calendar.svg");
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+
+}
+
+::-webkit-calendar-picker-indicator:hover {
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 1);
+}
+

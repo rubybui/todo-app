@@ -1,0 +1,36 @@
+.bulks-action {
+    display: flex;
+    position:fixed;
+    bottom:0;
+    width: inherit;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: #dddcdc;
+
+    &__controller {
+        padding-right: 2rem;
+        button {
+            font: inherit;
+            padding: 0.25rem 1rem;
+            margin-inline-end: 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 6rem;
+            border-radius: 3px;
+            color: white;
+            border: none;
+        }
+
+        &--done {
+            background-color: #0092ef;
+            color:#5bd7fc;
+        }
+
+        &--remove {
+            background-color: #de585c;
+            color:#ee9a9b;
+        }
+
+    }
+}
